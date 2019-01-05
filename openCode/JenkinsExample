@@ -1,0 +1,11 @@
+node{
+stage('SCM')
+{
+	git 'https://github.com/openmrs/openmrs-core.git'
+//gitclone
+}
+stage('build the packages'){
+//code for MVN package 
+sh 'mvn package'
+}
+}
