@@ -10,7 +10,7 @@ sh 'mvn package'
 }
 stage('show test results')
 {
-junit 'target/Surefire-reports/*.xml'
+junit 'target/surefire-reports/*.xml'
 }
 stage('archival'){
 //archiving artifacts
